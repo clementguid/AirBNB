@@ -1,0 +1,48 @@
+html {
+    position: absolute;
+    justify-content: center;
+    top: 20%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.fav{
+    .maison{
+        width: 50vh;
+        height: 50vh;
+        margin: 2px;
+        border-radius: 10px;
+        margin-top: 5%;
+        
+    }
+    .like{
+        position: absolute;
+        margin-top: 2%;
+        margin-left: -3%;
+        width: 2%;
+    }
+}
+
+.filter-fav{
+    filter: invert(42%) sepia(32%) saturate(2363%) hue-rotate(323deg)
+    brightness(116%) contrast(104%);
+}
+
+
+.name{
+    margin: 3px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.star{
+    width: 2vh;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+

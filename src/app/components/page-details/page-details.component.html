@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<div class="maison">
+  <ng-container *ngIf="accomodation">
+
+
+    <div class="texte-top">
+
+        <div class="left">
+            <div class="titre">
+                <h1>Superbe maison à {{accomodation.city.name}}</h1>
+                <div class="rating">
+                    <img class="star" src="../../../assets/star.svg">
+                    <h3>{{ accomodation.rating}}</h3>
+                </div>
+            </div>
+        </div>
+            
+        <div class="right">
+            <div>
+                <div class="share-save">
+                    <img src="../../../assets/share.png">
+                    <h3><u>Partager</u></h3>
+                    <img src="../../../assets/heart.svg">
+                    <h3><u>Enregistrer</u></h3>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="photo">
+      <img [src]="'data:image/jpeg;base64,' + accomodation.image" />
+    </div>
+
+    <div class="info">
+        <div class="left-bottom">
+            <h3>Prix : {{accomodation.price}}€ par nuit</h3>
+            <h3>Localisation : {{accomodation.city.name}}, {{accomodation.city.zipCode}}, FRANCE</h3>    
+        </div>
+        <div class="right-bottom">
+            <h2>Fêtes autorisées,<br>Merci d'entretenir le jardin si vous restez pour une longue durée. <br>Cette maison est localisée à quelques centaines de mètres d'un lac magnifique. Vous pourrez faire des randonnées dans des endroits incroyables.</h2>
+        </div>
+
+    </div>
+
+
+  </ng-container>
+</div>

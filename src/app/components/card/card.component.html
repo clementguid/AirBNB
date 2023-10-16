@@ -1,0 +1,30 @@
+<html>
+    
+
+
+
+        <div class="cards" *ngFor="let accomodation of accomodationsFiltered" > <!-- Récupère tous les logements filtrés par ville -->
+            
+            <div class="fav">
+                <img (click)="onClick(accomodation.id)"  class="maison" [src]="'data:image/jpeg;base64,' +  accomodation.image"> <!-- Affiche l'image correspondant au logement -->
+                <img class="like" src="../../../assets/heart.svg"  [ngClass]="{'filter-fav': accomodation.favourite}">
+            </div>
+            
+
+            <div class="name">
+                <h3>{{ accomodation.city.name}}, {{ accomodation.city.zipCode}}, France</h3>
+                    <div class="rating">
+                        <img class="star" src="../../../assets/star.svg">
+                        <h3>{{ accomodation.rating}}</h3>
+                    </div>
+            </div>
+
+
+            <h4>Particulier</h4>
+
+            <h4>{{ accomodation.price}}€ par nuit</h4>
+
+
+        </div>
+
+</html>

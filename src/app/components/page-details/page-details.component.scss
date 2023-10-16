@@ -1,0 +1,50 @@
+.maison{
+    top: 50px;
+    width: 90%;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.texte-top{
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.star{
+    width: 2vh;
+}
+
+.rating{
+    display: flex;  
+}
+
+.right{
+    img{
+        width: 2vh;
+    }
+}
+
+.share-save{
+    gap: 5%;
+    display: flex;
+}
+
+.photo{
+    margin-top: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    img {
+        width: 40%;
+    }
+}
+
+.info{
+    margin-top: 2%; 
+    display: flex;
+    gap: 10%;
+}

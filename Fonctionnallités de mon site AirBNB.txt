@@ -1,0 +1,10 @@
+- Dans le header :
+
+Clique sur le logo => Retour page d'accueil,
+Lors d'une entrée utilisateur dans la barre de recherche => proposition d'une liste de villes grâce à l4API gouv, filtre des logements affichés par ville (mettre une majuscule pour la première lettre de la ville).
+
+- Dans la page d'accueil :
+
+Affichage des différents logements et de leurs infos, 
+Coeur en haut à gauche de l'image si fav=1, 
+Possibilité de clique sur le logement pour ouvrir sa page détaillée.

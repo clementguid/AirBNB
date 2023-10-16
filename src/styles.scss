@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: 'Airbnb';
+    src: url('../src/assets/airbnb_light.otf') format('truetype');
+  }
+
+
+
+
+h1{
+    font-family: "Airbnb";
+    color: black;
+    font-size: 2rem;
+}
+
+
+h2{
+    font-family: "Airbnb";
+    font-weight: lighter;
+    color: black;
+    font-size: 1rem;
+}
+
+
+h3{
+    font-family: "Airbnb";
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+}
+
+
+
+
+h4{
+    font-family: "Airbnb";
+    font-weight: 50;
+    color: rgb(136, 135, 135);
+    font-size: 1rem;
+}
+
+
+h5{
+    font-family: "Airbnb";
+    font-weight: 30;
+    color: rgb(136, 135, 135);
+    font-size: 0.8rem;
+}
+
+
+h6{
+    font-family: "Airbnb";
+    font-weight: bold;
+    color: black;
+    font-size: 0.8rem;
+}
+

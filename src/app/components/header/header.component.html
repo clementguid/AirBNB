@@ -1,0 +1,44 @@
+<html>
+
+<div class="logo">
+  <a href="http://localhost:4200/">
+    <img src="../../../assets/logo.png" height="25" />
+  </a>
+</div>
+
+
+  <div class="search-bar">
+      <input list="city-suggestions" (input)="onInputChange($event)" type="text" id="where" placeholder="N'importe où">
+      <h5 id="barre" >|</h5>
+      <h5 id="txt" ><b>Une semaine</b></h5>
+      <h5 id="barre" >|</h5>
+      <h5 id="txt" >Ajouter des voyageurs</h5>
+      <div class="loupe-container"></div>
+      <img id="fleche" src="../../../assets/fleche.svg" height="25">
+  </div>
+
+
+    <datalist id="city-suggestions">
+      <option
+        *ngFor="let ville of villes$ | async"
+        [value]="ville.nom"
+      ></option>
+    </datalist> 
+
+
+
+  <h6 class="text">Mettre mon logement sur Airbnb</h6>
+
+  <div class="img-1">
+    <img src="../../../assets/world.svg"> 
+  </div>
+
+  <div class="img-2">
+    <img src="../../../assets/menu.svg">
+    <img src="../../../assets/account.svg">
+  </div>
+
+</html>
+
+
+
